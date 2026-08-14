@@ -1,0 +1,136 @@
+LEVEL 1:
+
+First I cloned the Repository into my terminal using:
+
+git clone https://github.com/rogueone-x/Terminal-Voyage-User-Edition.git
+
+Then I checked what all directories are there in the repository using 
+ls -la
+
+Then I went inside the directory Loguetown_Reef using the command:
+cd Loguetown_Reef
+
+The I went on checking what is all there in all the directories in the LogueTown_Reef one by one. And for coming out of a directory I used 
+cd ..
+
+The in sector_C I found that devil_fruit_6.txt is different.
+
+Then I came of the sector_C and used the code that the task asked me to use,
+./eat.sh sector_C/devil_fruit_6.txt
+
+Then it gave me the clue to the next Level 2:
+That is 
+
+AWAKENING_SIGNATURE:
+ONE_PIECE{GITO_GITO_NO_AWAKENING}
+
+LEVEL 2:
+
+For level 2 I changed the branch from canonical-timeline to whiskey_peak_investigation. For that first checked what all branches are there using 
+git branch -a
+The I changed the branch to whiskey_peak_investigation using
+git switch whiskey_peak_investigation
+Then I went inside the GrandLine and then I check what all repositories are there and then went into Whiskey_Peak and then I went to the .baroque_works_cache directory
+
+There I read the code in unlock_vault.sh and then I understood that I need to export the awakening signature that is the clue in level 1.
+export     AWAKENING_SIGNATURE='ONE_PIECE{GITO_GITO_NO_AWAKENING}'
+rm -f marine_intercept.log bounty_hunter_feed.log
+for i in {1..100}; do
+        echo "LOG_STREAM_ENTRY_SECURE_NODE_$(printf "%03d" $i)_VALID" >> "marine_intercept.log"
+        echo "LOG_STREAM_ENTRY_SECURE_NODE_$(printf "%03d" $i)_VALID" >> "bounty_hunter_feed.log"
+    done
+    
+REAL_FLAG=$(echo "$ENCRYPTED_FLAG" | openssl enc -aes-256-cbc -d -a -pbkdf2 -iter 100000 -pass pass:"ONE_PIECE{GITO_GITO_NO_AWAKENING}" 2>/dev/null)
+
+y_Peak/.baroque_works_cache$ sed -i "42s/.*/ONE_PIECE{GITO_GITO_NO_AWAKENING}/" bounty_hunter_feed.log
+
+cat bounty_hunter_feed.log
+
+
+LEVEL 3:
+
+Now I switched my branch to little_garden
+In that I went into GrandLine and then I went into Wax_Jungle
+In I started going through all the directories and finally found a the file
+cd sector_beta
+cd outpost
+cd watchtower
+cd storage
+cd archive
+cat agent_manifest.log 
+In this I found the first Poneglyph fragment 1
+
+BAROQUE WORKS EXECUTIVE REPORT:
+
+PONEGLYPH_FRAGMENT_I = "KjY2MjF4bW0lKzYqNyBsIS0vbTAtJTcnL"
+
+LEVEL 4:
+
+First I changed my branch to alternate_timeline
+Then I tried to check the file type by giving the code:
+file puffing_tom_blueprints
+tar -xvzf puffing_tom_blueprints
+unzip step1_blueprints.zip
+Then I went into blueprints_extracted that was unziped
+Then I opened secret_link.txt
+
+I got the second poneglyph fragment 
+PONEGLYPH_FRAGMENT_II="SwnbzptDiM3JSpvFiMuJ28PJzAlJ28VIzA="
+
+LEVEL 5:
+
+Then I exited from the Water_7 then entered into Enies_Lobby
+
+cd Enies_Lobby
+First I created a python file using 
+nano script.py
+And then copy pasted the code that is there in poneglyph.py
+And then executed the code using:
+python3 script.py
+I then executed the code and combined the both poneglyph fragemnts
+
+Enter code : KjY2MjF4bW0lKzYqNyBsIS0vbTAtJTcnLSwnbzptDiM3JSpvFiMuJ28PJzAlJ28VIzA=
+
+The I got the link for the level 6
+
+Prize : 
+https://github.com/rogueone-x/Laugh-Tale-Merge-War
+
+
+LEVEL 6:
+
+Now I cloned the Laugh-Tale-Merge-War into my terminal.
+The I tried merging the branches in the repository but it showed some that I need to commit some changes so I opened ancient_history branch and removed the >>>>>> and ====== symbols then merged both branches using 
+git merge pirate_king_path
+
+Then I opened the 'treasure' directory and opened both the key_part_1.txt and key_part_2.txt simultaneously using:
+cat key_part_1.txt
+cat key_part_2.txt
+
+PONEGLYPH FRAGMENT α
+
+Recovered Inscription:
+HEAD
+Line
+TheGrand
+pirate_king_path
+
+PONEGLYPH FRAGMENT β
+
+Recovered Inscription:
+
+HEAD
+bers
+Remem
+pirate_king_path
+
+
+I then excecuted the victory.sh using:
+bash victory.sh
+
+Then I tried various combinations of passwords and after around 15 tries I cracked the password:
+
+Enter the Pirate King's Password: TheGrandLineRemembers
+
+The task is successfully completed.
+
