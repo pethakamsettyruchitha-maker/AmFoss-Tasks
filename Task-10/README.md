@@ -32,3 +32,7 @@ PROBLEMS THAT I HAVE FACED:
 
 Grid not lining up with the image — early on, the grid was drawn based on the full screen size rather than the actual size of the displayed image, so the lines didn't match the picture underneath. Wrapping the image and grid together in a Stack with Positioned.fill fixed this, since the CustomPaint now sizes itself to match the image's layout box.
 
+PLEASE GO TO NEXT BRANCH FOR THE FILES OF THE APP
+
+https://github.com/pethakamsettyruchitha-maker/AmFoss-Tasks.git
+
