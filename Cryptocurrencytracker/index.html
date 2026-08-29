@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crypto Tracker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="statusBanner" class="statusBanner"></div>
+
+<header>
+  <h1>Crypto Tracker</h1>
+  <p>Live prices, trends, and a watchlist for the coins you care about</p>
+</header>
+
+<div class="container">
+
+  <div class="toolbar">
+    <input type="text" id="searchBox" placeholder="Search a coin (e.g. bitcoin, eth)..." autocomplete="off" />
+    <div id="searchResults"></div>
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+  </div>
+
+  <div id="loadingMsg" class="loadingMsg">Loading market data...</div>
+  <div id="errorMsg" class="errorMsg" style="display:none;">
+    <div id="errorText"></div>
+    <button id="retryBtn">Retry</button>
+  </div>
+
+  <table id="coinTable" style="display:none;">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Coin</th>
+        <th>Price</th>
+        <th>24h Change</th>
+        <th>Market Cap</th>
+        <th>Watch</th>
+      </tr>
+    </thead>
+    <tbody id="coinTableBody"></tbody>
+  </table>
+
+  <div id="chartSection">
+    <div class="chartHeader">
+      <h3 id="chartCoinName">Coin Name</h3>
+      <button id="closeChartBtn">Close ✕</button>
+    </div>
+    <div class="rangeBtns" id="rangeBtns">
+      <button data-days="1">24H</button>
+      <button data-days="7">1W</button>
+      <button data-days="30">1M</button>
+      <button data-days="365">1Y</button>
+    </div>
+    <div id="chartStatus"></div>
+    <div class="chartCanvasWrap">
+      <canvas id="priceChart"></canvas>
+    </div>
+  </div>
+
+  <div id="wishlistSection">
+    <h2>My Wishlist</h2>
+    <div id="wishlistEmpty" class="emptyMsg">You haven't starred any coins yet. Click the ☆ Add button next to a coin to add it here.</div>
+    <table id="wishlistTable" style="display:none;">
+      <thead>
+        <tr>
+          <th>Coin</th>
+          <th>Price</th>
+          <th>24h Change</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="wishlistTableBody"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  Data provided by the CoinGecko API. Prices refresh automatically every 90 seconds.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
