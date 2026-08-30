@@ -1,4 +1,4 @@
-# **Question 1: EASY**<br/>
+<img width="287" height="256" alt="image" src="https://github.com/user-attachments/assets/3bba7e6b-68f4-40c5-897f-cd6b625a6de9" /># **Question 1: EASY**<br/>
 ## ***9. Palindrome number***<br/>
 -  In This first the code should return False if the number is less than 0
 * Then I saved the value of the x in a variable called or_num in order to equate it to the resuting number at the last.
@@ -42,13 +42,21 @@ To convert Celsius to Fahrenheit, we have to multiply the celsius value by 1.8 a
 
 
 # **Question 5: MEDIUM**<br/>
-## ***7. Reverse Integer***<br/>
+## ***43. Reverse Integer***<br/>
  -  **Convert to integers**<br/>
 I used python inbuilt ***int()*** function to change the text strings num1 and num2 into mathematical numbers n1 and n2
  -  **Multiply** <br/>
 Then I multiplied the two numbers using multiplication operator and saved the result in variable called ***product***
  - **Convert the string** <br/>
  Then I used the ***str()*** function to turn the mathematical answer back into text string before returning it.
+
+
+
+
+# **BLOCKERS**<br/>
+### Didn't know OOPS concept, so I had to learn it.
+
+
 
 
 
