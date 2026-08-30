@@ -33,7 +33,7 @@ Kept shouldRepaint simple by always returning true, so the grid always redraws w
 - Grid not lining up with the image — early on, the grid was drawn based on the full screen size rather than the actual size of the displayed image, so the lines didn't match the picture underneath. Wrapping the image and grid together in a Stack with Positioned.fill fixed this, since the CustomPaint now sizes itself to match the image's layout box.
 
 ### PLEASE GO TO Task-10 BRANCH FOR THE FILES OF THE APP.
-     - https://github.com/pethakamsettyruchitha-maker/AmFoss-Tasks/tree/Task-10
+     https://github.com/pethakamsettyruchitha-maker/AmFoss-Tasks/tree/Task-10
 
 ### Reason I had to make a new branch :
   - When I tried to push the files into the git using git commands it showed error
@@ -41,13 +41,13 @@ Kept shouldRepaint simple by always returning true, so the grid always redraws w
   - Then I used the commands to init
 
 ### Codes I used to make a new branch:
-     - git init 
-     - git add .
-     - git commit -m "Initial commit of existing folder"
-     - git branch -m Task-10
-     - git remote add origin https://github.com/pethakamsettyruchitha-maker/AmFoss-Tasks.git
-     - git push -u origin main
-     - 
+      git init 
+      git add .
+      git commit -m "Initial commit of existing folder"
+      git branch -m Task-10
+      git remote add origin https://github.com/pethakamsettyruchitha-maker/AmFoss-Tasks.git
+      git push -u origin main
+     
 
 
 
