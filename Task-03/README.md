@@ -29,7 +29,7 @@
 # **Question 3: EASY**<br/>
 ## ***2469. Convert The Temperature***<br/>
 ###  **Celsius to Kelvin**<br/>
-To convert celsius to kelvin we have to add 273.15 to the celcius value
+To convert celsius to kelvin we have to add 273.15 to the celsius value
 ### **Celsius to Fahrenheit** <br/>
 To convert Celsius to Fahrenheit, we have to multiply the celsius value by 1.8 and then add 32
 
