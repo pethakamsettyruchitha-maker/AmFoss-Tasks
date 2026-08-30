@@ -1,7 +1,7 @@
 # **Question 1: EASY**<br/>
 ## ***9. Palindrome number***<br/>
 -  In This first the code should return False if the number is less than 0
-* Then I saved the value of the x in a variable called or_num in order to equate it to the resuting number at the last.
+* Then I saved the value of the x in a variable called or_num in order to equate it to the resulting number at the last.
 + Then if the number is greater that 0 then first
     + First count=count*10
     + then added the remainder of the number divided by 10
